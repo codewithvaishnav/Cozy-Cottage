@@ -2,7 +2,7 @@
 
 > A cinematic luxury cottage and nature retreat web application featuring an interactive 3D estate model, live availability calendar, ambient audio, and immersive handcrafted guest experiences.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online%20%26%20Deployed-brightgreen?style=for-the-badge&logo=google-cloud&logoColor=white)](https://ais-pre-tjde7fvumtkryxp2rb44pk-723216292313.asia-east1.run.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online%20%26%20Deployed-brightgreen?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cozy-429f4.web.app/)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.2-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -16,8 +16,8 @@
 
 The application is deployed and accessible online:
 
-👉 **[Launch Live Retreat Experience](https://ais-pre-tjde7fvumtkryxp2rb44pk-723216292313.asia-east1.run.app)**  
-*Live preview URL:* `https://ais-pre-tjde7fvumtkryxp2rb44pk-723216292313.asia-east1.run.app`
+👉 **[Launch Live URL](https://cozy-429f4.web.app/)**  
+*Live URL:* `https://cozy-429f4.web.app/`
 
 ---
 
@@ -68,51 +68,6 @@ The application is deployed and accessible online:
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-Make sure you have Node.js (version 18 or higher) and npm installed on your machine.
-
-- [Node.js](https://nodejs.org/) (v18.x or v20.x recommended)
-- [npm](https://www.npmjs.com/) (bundled with Node.js)
-
-### Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/cozy-cottage.git
-   cd cozy-cottage
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Start the local development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in your browser**:
-   Navigate to `http://localhost:3000` to preview the retreat website.
-
----
-
-## 📦 Available Scripts
-
-In the project root, you can run:
-
-| Command | Description |
-| :--- | :--- |
-| `npm run dev` | Starts the Vite development server on `http://localhost:3000` |
-| `npm run build` | Compiles TypeScript and creates optimized production assets in `/dist` |
-| `npm run preview` | Locally serves the production build for testing |
-| `npm run lint` | Runs TypeScript compiler type-checking without emitting files |
-| `npm run clean` | Removes the compiled `dist/` directory |
-
----
 
 ## 📂 Project Structure
 
@@ -144,30 +99,6 @@ In the project root, you can run:
             └── ScrollProgressBar.tsx    # Reading and scroll position indicator
 ```
 
----
-
-## 🌐 Deployment
-
-### 🟢 Current Live Deployment
-This web application is deployed and live at:
-- **URL**: [https://ais-pre-tjde7fvumtkryxp2rb44pk-723216292313.asia-east1.run.app](https://ais-pre-tjde7fvumtkryxp2rb44pk-723216292313.asia-east1.run.app)
-- **Status**: Active & Operational 🟢
-
-### Deploy to Vercel
-1. Push your repository to GitHub.
-2. Go to [Vercel](https://vercel.com/) and click **New Project**.
-3. Import your `cozy-cottage` repository.
-4. Framework Preset will auto-detect as **Vite**.
-5. Click **Deploy**.
-
-### Deploy to Netlify
-1. Connect your repository in [Netlify](https://www.netlify.com/).
-2. Set build command to `npm run build` and publish directory to `dist`.
-3. Click **Deploy Site**.
-
-### Deploy to GitHub Pages
-1. In `vite.config.ts`, ensure `base: './'` is configured if serving from a subpath.
-2. Run `npm run build` and publish the `dist` folder to your `gh-pages` branch.
 
 ---
 
