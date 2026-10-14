@@ -1,0 +1,6 @@
+{
+  "name": "Cozy Cottage — Luxury Farmhouse & Nature Retreat",
+  "description": "A cinematic luxury cottage and farmhouse stay featuring private pool, warm artisanal interiors, peaceful party lawn, campfire nights, live availability calendar, and an interactive 3D estate model.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

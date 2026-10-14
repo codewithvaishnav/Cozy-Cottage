@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blissful Retreat — Luxury Farm Stay in Moinabad, Hyderabad</title>
+  <meta name="description" content="Blissful Retreat — a cinematic luxury farmhouse stay in Moinabad, Hyderabad. Private pools, premium bedrooms, party lawn, BBQ nights, and unforgettable group stays."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--bg:#0a0a0a;--bg-soft:#101310;--green:#1a2e1a;--beige:#f5f0e8;--gold:#c9a84c;--gold-soft:rgba(201,168,76,.18);--w08:rgba(255,255,255,.08);--shadow:0 20px 60px rgba(0,0,0,.45);--rx:28px;--ease:cubic-bezier(.22,1,.36,1)}
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:"Poppins",sans-serif;background:radial-gradient(circle at top right,rgba(201,168,76,.06),transparent 22%),radial-gradient(circle at 20% 20%,rgba(26,46,26,.25),transparent 28%),linear-gradient(180deg,#060606 0%,#0a0a0a 40%,#0d120d 100%);color:var(--beige);overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.01) 0px,rgba(255,255,255,.01) 1px,transparent 1px,transparent 3px);opacity:.18;mix-blend-mode:soft-light;z-index:1}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;border:none;background:none;cursor:pointer}
+    .container{width:min(calc(100% - 40px),1240px);margin:0 auto;position:relative;z-index:2}
+    .section{padding:110px 0;position:relative;z-index:2}
+    .eyebrow{display:inline-flex;align-items:center;gap:12px;color:rgba(245,240,232,.72);font-size:.8rem;text-transform:uppercase;letter-spacing:.22em;margin-bottom:20px}
+    .eyebrow::before{content:"";width:54px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    .section-title{font-family:"Playfair Display",serif;font-size:clamp(2.2rem,4vw,4rem);line-height:1.04;letter-spacing:-.03em;margin-bottom:16px}
+    .section-desc{color:rgba(245,240,232,.72);font-size:1rem;max-width:640px}
+    .gold{color:var(--gold)}
+    .glass-panel{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.09);border-radius:var(--rx);backdrop-filter:blur(16px);box-shadow:var(--shadow)}
+    /* NAVBAR */
+    .navbar{position:fixed;top:18px;left:0;right:0;z-index:50;transition:transform .6s var(--ease)}
+    .navbar-inner{width:min(calc(100% - 28px),1280px);margin:0 auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;border:1px solid rgba(255,255,255,.09);background:rgba(14,14,14,.45);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-radius:999px;box-shadow:0 8px 28px rgba(0,0,0,.25)}
+    .navbar.scrolled .navbar-inner{background:rgba(9,11,9,.7);border-color:rgba(201,168,76,.18)}
+    .brand{display:flex;align-items:center;gap:10px;font-family:"Playfair Display",serif;font-size:1.08rem;letter-spacing:.04em;white-space:nowrap}
+    .brand-mark{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#f5d67c,var(--gold));box-shadow:0 0 18px rgba(201,168,76,.45)}
+    .nav-links{display:flex;align-items:center;gap:28px}
+    .nav-links a{color:rgba(245,240,232,.82);font-size:.95rem;transition:color .3s}
+    .nav-links a:hover{color:var(--beige)}
+    .nav-cta{padding:11px 20px;border:1px solid rgba(201,168,76,.7);color:var(--gold);border-radius:999px;transition:all .35s}
+    .nav-cta:hover{background:rgba(201,168,76,.08);box-shadow:0 0 18px rgba(201,168,76,.15)}
+    .menu-toggle{display:none;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.12);align-items:center;justify-content:center;color:var(--beige);background:rgba(255,255,255,.04)}
+    .mobile-panel{position:fixed;top:88px;left:14px;right:14px;z-index:48;padding:18px;border-radius:24px;background:rgba(11,11,11,.95);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.09);box-shadow:0 20px 40px rgba(0,0,0,.34);opacity:0;transform:translateY(-12px);pointer-events:none;transition:all .35s}
+    .mobile-panel.open{opacity:1;transform:translateY(0);pointer-events:auto}
+    .mobile-panel a{display:block;padding:14px 8px;border-bottom:1px solid rgba(255,255,255,.07);color:rgba(245,240,232,.88);font-size:1.05rem;transition:color .25s}
+    .mobile-panel a:last-child{border:none}
+    .mobile-panel a:hover{color:var(--gold)}
+    /* HERO */
+    .hero{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;overflow:clip;padding:130px 0 80px}
+    .hero-video-wrap,.hero-video{position:absolute;inset:0;width:100%;height:100%}
+    .hero-video{object-fit:cover;filter:saturate(.88) brightness(.55);transform:scale(1.06)}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,7,7,.62) 0%,rgba(7,7,7,.28) 22%,rgba(7,7,7,.46) 55%,rgba(7,7,7,.88) 100%)}
+    .hero-content{position:relative;z-index:2;width:min(100%,980px);text-align:center;padding-inline:12px}
+    .hero-kicker{display:inline-flex;align-items:center;gap:12px;padding:10px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);backdrop-filter:blur(12px);color:rgba(245,240,232,.85);font-size:.86rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:24px}
+    .hero-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px rgba(201,168,76,.65)}
+    .hero h1{font-family:"Playfair Display",serif;font-size:clamp(2.8rem,7vw,6.5rem);line-height:.96;letter-spacing:-.05em;margin-bottom:18px}
+    .hero-sub{font-size:clamp(1rem,1.8vw,1.22rem);color:rgba(245,240,232,.8);margin:0 auto 32px;max-width:700px}
+    .hero-actions{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}
+    .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border-radius:999px;font-weight:500;overflow:hidden;transition:transform .45s var(--ease),box-shadow .35s,border-color .35s,background .35s;will-change:transform;font-size:.97rem}
+    .btn:hover{transform:translateY(-3px)}
+    .btn-primary{color:#111;background:linear-gradient(135deg,#efd995 0%,var(--gold) 52%,#b68d28 100%);box-shadow:0 18px 38px rgba(201,168,76,.22)}
+    .btn-primary:hover{box-shadow:0 24px 44px rgba(201,168,76,.34)}
+    .btn-secondary{color:var(--beige);border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);backdrop-filter:blur(14px)}
+    .btn-secondary:hover{border-color:rgba(201,168,76,.35);box-shadow:0 0 0 1px rgba(201,168,76,.16) inset,0 14px 30px rgba(0,0,0,.22)}
+    .btn-location{color:rgba(245,240,232,.78);border:1px solid rgba(255,255,255,.18);background:transparent;font-size:.86rem;min-height:46px;padding:0 18px;gap:7px}
+    .btn-location:hover{border-color:rgba(201,168,76,.4);color:var(--gold)}
+    .hero-scroll-wrap{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:10px;color:rgba(245,240,232,.6);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+    .hero-scroll{width:30px;height:52px;border:1px solid rgba(255,255,255,.25);border-radius:999px;position:relative;background:rgba(255,255,255,.02)}
+    .hero-scroll::before{content:"";width:6px;height:10px;background:var(--gold);border-radius:999px;position:absolute;top:9px;left:50%;transform:translateX(-50%);animation:scrollDot 2s ease-in-out infinite}
+    @keyframes scrollDot{0%{transform:translate(-50%,0);opacity:0}20%{opacity:1}60%{transform:translate(-50%,18px);opacity:1}100%{transform:translate(-50%,24px);opacity:0}}
+    /* INTRO / ABOUT */
+    .intro-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:stretch}
+    .intro-copy{padding:36px}
+    .intro-copy p{color:rgba(245,240,232,.76);line-height:1.8;margin-bottom:16px}
+    .intro-copy p:last-child{margin-bottom:0}
+    .intro-side{padding:20px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px;align-content:start}
+    .feature-tile {
+      padding: 28px 24px;
+      border-radius: 18px;
+      background: linear-gradient(180deg,
+        rgba(255,255,255,0.05),
+        rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.07);
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .feature-tile:hover {
+      border-color: rgba(201,168,76,0.25);
+      transform: translateY(-4px);
+    }
+    .feature-line {
+      width: 32px;
+      height: 2px;
+      background: linear-gradient(90deg, #c9a84c, #efd995);
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+    .feature-headline {
+      font-family: "Playfair Display", serif;
+      font-size: 1.15rem;
+      color: var(--beige);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .feature-sub {
+      font-size: 0.88rem;
+      color: rgba(245,240,232,0.55);
+      line-height: 1.6;
+    }
+    /* EXPERIENCES */
+    .experiences-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .experience-card{position:relative;border-radius:var(--rx);overflow:hidden;min-height:360px;border:1px solid rgba(255,255,255,.08);cursor:pointer;isolation:isolate;box-shadow:0 20px 50px rgba(0,0,0,.28);transition:transform .7s var(--ease),border-color .4s,box-shadow .45s}
+    .experience-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.55) 65%,rgba(0,0,0,.88) 100%);z-index:0;transition:transform .8s var(--ease)}
+    .experience-card:hover{transform:translateY(-8px) scale(1.01);border-color:rgba(201,168,76,.22);box-shadow:0 30px 70px rgba(0,0,0,.4),0 0 30px rgba(201,168,76,.08)}
+    .experience-card:hover::before{transform:scale(1.04)}
+    .card-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .85s var(--ease),filter .45s;z-index:-1;filter:saturate(.9) brightness(.78)}
+    .experience-card:hover .card-bg{transform:scale(1.08);filter:saturate(1) brightness(.88)}
+    .experience-card-content{position:absolute;left:24px;right:24px;bottom:24px;z-index:3;display:flex;flex-direction:column;gap:10px}
+    .experience-tag{display:inline-flex;width:fit-content;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,240,232,.82)}
+    .experience-card h3{font-family:"Playfair Display",serif;font-size:2rem;line-height:1;letter-spacing:-.03em}
+    .experience-card p{color:rgba(245,240,232,.74);font-size:.93rem}
+    .card-arrow{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);display:inline-flex;align-items:center;justify-content:center;color:var(--gold);margin-top:6px;transition:transform .35s,background .35s}
+    .experience-card:hover .card-arrow{transform:translateX(4px);background:rgba(201,168,76,.09)}
+    /* CINEMATIC */
+    .cinematic{padding:160px 0;position:relative;overflow:hidden}
+    .cinematic-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.55) saturate(.9);transform:scale(1.06)}
+    .cinematic-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,5,5,.42),rgba(5,5,5,.65))}
+    .cinematic-content{position:relative;z-index:2;text-align:center;max-width:900px;margin:0 auto}
+    .cinematic h2{font-family:"Playfair Display",serif;font-size:clamp(2.6rem,5.5vw,5rem);line-height:1;letter-spacing:-.04em;margin-bottom:18px}
+    .cinematic p{color:rgba(245,240,232,.78);font-size:1.08rem;max-width:680px;margin:0 auto 32px}
+    /* REVIEWS (UNIFIED) */
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .review-card{border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.03));box-shadow:0 14px 36px rgba(0,0,0,.24);transition:transform .3s,border-color .3s;display:flex;flex-direction:column}
+    .review-card:hover{transform:translateY(-4px);border-color:rgba(201,168,76,.2)}
+    .g-stars{color:var(--gold);letter-spacing:.1em;font-size:.95rem;margin-bottom:12px}
+    .g-text{color:rgba(245,240,232,.78);font-size:.9rem;line-height:1.65}
+    .g-badge{width:20px;height:20px;flex-shrink:0}
+    /* BOOKING */
+    .booking-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:stretch}
+    .booking-card,.booking-info{padding:36px;border-radius:var(--rx);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
+    .booking-card h3,.booking-info h3{font-family:"Playfair Display",serif;font-size:2.2rem;line-height:1.04;margin-bottom:14px}
+    .booking-card p,.booking-info p{color:rgba(245,240,232,.72);margin-bottom:24px}
+    .booking-actions{display:flex;gap:14px;flex-wrap:wrap}
+    .contact-list{list-style:none;display:grid;gap:16px}
+    .contact-list li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07);display:grid;gap:4px}
+    .contact-list small{color:rgba(245,240,232,.48);text-transform:uppercase;letter-spacing:.13em;font-size:.74rem}
+    .contact-list span,.contact-list a{color:rgba(245,240,232,.9)}
+    /* FOOTER */
+    footer{padding:44px 0;border-top:1px solid rgba(255,255,255,.08);position:relative;z-index:2}
+    .footer-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+    .footer-brand{font-family:"Playfair Display",serif;font-size:1.3rem;margin-bottom:10px}
+    .footer-tagline{color:rgba(245,240,232,.52);font-size:.88rem;margin-bottom:16px}
+    .footer-contact p{color:rgba(245,240,232,.65);font-size:.9rem;line-height:2}
+    .footer-links-col h5{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,240,232,.4);margin-bottom:16px}
+    .footer-links-col a{display:block;color:rgba(245,240,232,.68);font-size:.9rem;margin-bottom:10px;transition:color .25s}
+    .footer-links-col a:hover{color:var(--gold)}
+    .footer-bottom{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;font-size:.84rem;color:rgba(245,240,232,.38);flex-wrap:wrap;gap:12px}
+    .insta-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid rgba(255,255,255,.1);border-radius:999px;font-size:.86rem;color:rgba(245,240,232,.7);transition:all .3s}
+    .insta-pill:hover{border-color:rgba(201,168,76,.3);color:var(--gold)}
+    /* FLOATING WA */
+    .floating-wa{position:fixed;right:22px;bottom:22px;z-index:60;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#25d366,#169c4e);color:#fff;box-shadow:0 18px 34px rgba(37,211,102,.28);transition:transform .35s,box-shadow .35s}
+    .floating-wa:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 24px 40px rgba(37,211,102,.4)}
+    .floating-wa svg{width:28px;height:28px}
+    .wa-pulse{position:absolute;width:100%;height:100%;border-radius:50%;border:2px solid rgba(37,211,102,.4);animation:waPulse 2.2s ease-out infinite}
+    @keyframes waPulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.6);opacity:0}}
+    /* MODAL (experiences) */
+    .modal{position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(4,5,4,.72);backdrop-filter:blur(16px);opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+    .modal.open{opacity:1;visibility:visible}
+    .modal-dialog{width:min(100%,1100px);max-height:calc(100vh - 40px);overflow:auto;border-radius:28px;border:1px solid rgba(255,255,255,.08);background:radial-gradient(circle at top right,rgba(201,168,76,.12),transparent 28%),radial-gradient(circle at bottom left,rgba(26,46,26,.32),transparent 28%),linear-gradient(180deg,rgba(18,18,18,.96),rgba(10,10,10,.98));box-shadow:0 36px 80px rgba(0,0,0,.5);transform:translateY(24px) scale(.97);transition:transform .45s var(--ease);overscroll-behavior:contain}
+    .modal.open .modal-dialog{transform:translateY(0) scale(1)}
+    .modal-close{position:sticky;top:14px;margin-left:auto;display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.28);color:var(--gold);backdrop-filter:blur(10px);z-index:4;margin-right:18px;margin-top:18px;transition:transform .3s,background .3s}
+    .modal-close:hover{transform:rotate(90deg);background:rgba(201,168,76,.08)}
+    .modal-body{padding:6px 28px 30px}
+    .modal-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .modal-gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .modal-content-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+    .modal-title{font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3rem);line-height:1;margin-bottom:14px}
+    .modal-text{color:rgba(245,240,232,.75);margin-bottom:22px;line-height:1.75}
+    .highlights-title{font-size:.84rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(245,240,232,.55);margin-bottom:16px}
+    .highlights{list-style:none;display:grid;gap:12px}
+    .highlights li{position:relative;padding-left:24px;color:rgba(245,240,232,.86)}
+    .highlights li::before{content:"";width:8px;height:8px;position:absolute;left:0;top:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px rgba(201,168,76,.32)}
+    .modal-side-card{padding:22px;border-radius:20px;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.025))}
+    .modal-side-card h4{font-family:"Playfair Display",serif;font-size:1.5rem;margin-bottom:10px}
+    .modal-side-card p{color:rgba(245,240,232,.7);margin-bottom:16px;font-size:.93rem}
+    /* VIDEO LIGHTBOX */
+    .vid-lightbox{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.88);backdrop-filter:blur(20px);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+    .vid-lightbox.open{opacity:1;visibility:visible}
+    .vid-lightbox-inner{position:relative;width:min(100%,960px);border-radius:20px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.6)}
+    .vid-lightbox-inner iframe{width:100%;aspect-ratio:16/9;display:block;border:none}
+    .vid-lightbox-close{position:absolute;top:-18px;right:-18px;width:44px;height:44px;border-radius:50%;background:rgba(20,20,20,.9);border:1px solid rgba(201,168,76,.3);color:var(--gold);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .3s,background .3s;z-index:5}
+    .vid-lightbox-close:hover{transform:rotate(90deg);background:rgba(201,168,76,.1)}
+    /* ANIMATIONS */
+    .reveal{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease),transform 1s var(--ease);will-change:transform,opacity}
+    .reveal.revealed{opacity:1;transform:translateY(0)}
+    .hero-fade{opacity:0;transform:translateY(24px);animation:heroEnter 1.2s var(--ease) forwards}
+    .hero-fade.d1{animation-delay:.12s}.hero-fade.d2{animation-delay:.24s}.hero-fade.d3{animation-delay:.38s}
+    @keyframes heroEnter{to{opacity:1;transform:translateY(0)}}
+    /* RESPONSIVE */
+    @media(max-width:1024px){
+      .experiences-grid{grid-template-columns:repeat(2,1fr)}
+      .reviews-grid{grid-template-columns:repeat(2,1fr)}
+      .intro-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:768px){
+      .section{padding:80px 0}
+      .nav-links{display:none}
+      .menu-toggle{display:flex}
+      .experiences-grid{grid-template-columns:repeat(2,1fr)}
+      .reviews-grid{grid-template-columns:repeat(2,1fr)}
+      .reviews-grid > div:first-child{flex-direction:column!important;height:auto!important}
+      .reviews-grid > div:first-child > div{width:100%!important}
+      .reviews-grid > div:first-child img{height:200px!important;border-radius:20px 20px 0 0!important}
+      .booking-wrap{grid-template-columns:1fr}
+      .modal-content-grid{grid-template-columns:1fr}
+      .cinematic{padding:100px 0}
+      .footer-inner{gap:24px}
+      .vid-lightbox-close{top:8px;right:8px}
+    }
+    @media(max-width:480px){
+      .experiences-grid{grid-template-columns:1fr}
+      .intro-side{grid-template-columns:1fr 1fr}
+      .hero-actions{flex-direction:column;align-items:center;gap:12px}
+      .btn,.btn-primary,.btn-secondary{width:100%;max-width:300px;justify-content:center}
+      .btn-location{max-width:200px}
+      .footer-inner{flex-direction:column}
+      .footer-bottom{flex-direction:column;text-align:center}
+      .modal-body{padding:6px 16px 22px}
+      .modal-dialog{border-radius:20px}
+      .reviews-grid{grid-template-columns:1fr}
+      .review-card{flex-direction:column!important;height:auto!important}
+      .review-card > div{width:100%!important}
+      .review-card img{height:180px!important;border-radius:20px 20px 0 0!important}
+      .modal-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+      .modal-gallery img {
+        height: 140px;
+      }
+    }
+    /* CALENDAR — Premium Redesign */
+    .cal-panel{padding:32px;border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.10);box-shadow:0 24px 60px rgba(0,0,0,.4)}
+    .cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .cal-month-label{font-family:"Playfair Display",serif;font-size:1.6rem;letter-spacing:.01em;color:var(--beige)}
+    .cal-nav{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:var(--gold);font-size:1.3rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s}
+    .cal-nav:hover{background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.3)}
+    .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+    .cal-day-name{text-align:center;font-size:.72rem;color:rgba(245,240,232,.38);padding-bottom:12px;text-transform:uppercase;letter-spacing:.14em}
+    .cal-cell{width:44px;height:44px;border-radius:10px;font-size:.92rem;display:flex;align-items:center;justify-content:center;transition:all .2s;cursor:default;margin:0 auto;position:relative}
+    .cal-cell.empty{background:transparent}
+    .cal-cell.available{color:rgba(245,240,232,.82)}
+    .cal-cell.available:hover{background:rgba(255,255,255,.06)}
+    .cal-cell.booked{background:rgba(220,50,50,.15);color:rgba(255,100,100,.5);text-decoration:line-through;cursor:not-allowed;border:1px solid rgba(220,50,50,.2)}
+    .cal-cell.past{color:rgba(255,255,255,.18)}
+    .cal-cell.today{background:rgba(201,168,76,.12);border:2px solid var(--gold);color:var(--gold);font-weight:600}
+    /* Tooltip on booked cells */
+    .cal-cell.booked .cal-tooltip{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:rgba(15,15,15,.95);border:1px solid rgba(220,50,50,.35);border-radius:10px;padding:8px 14px;font-size:.78rem;color:rgba(245,240,232,.9);white-space:nowrap;z-index:100;pointer-events:none;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+    .cal-cell.booked .cal-tooltip::after{content:"";position:absolute;bottom:-12px;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:rgba(15,15,15,.95)}
+    .cal-cell.booked:hover .cal-tooltip{opacity:1;visibility:visible}
+    .cal-legend{display:flex;gap:24px;justify-content:center;padding-top:20px;border-top:1px solid rgba(255,255,255,.06);font-size:.85rem;color:rgba(245,240,232,.55)}
+    .cal-loading{text-align:center;padding:40px 0;color:rgba(245,240,232,.38);font-size:.9rem}
+    @media(max-width:480px){.cal-panel{padding:22px}.cal-cell{width:36px;height:36px;font-size:.82rem}}
+  </style>
+
+<script type="module">
+  import { initializeApp } from 
+    "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore, collection, onSnapshot } from 
+    "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDG4D_4e10pssQfVDqD1lMY7UTspcsKRmU",
+    authDomain: "blissful-53cbf.firebaseapp.com",
+    projectId: "blissful-53cbf",
+    storageBucket: "blissful-53cbf.firebasestorage.app",
+    messagingSenderId: "952451944313",
+    appId: "1:952451944313:web:2649c0be1219d6c694a9a8"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  window.__blissfulDB = db;
+  window.__firestoreModules = { collection, onSnapshot };
+
+  // Dispatch event so calendar knows Firebase is ready
+  window.dispatchEvent(new Event('firebaseReady'));
+</script>
+</head>
+<body>
+<!-- FLOATING WHATSAPP -->
+<a class="floating-wa" href="https://wa.me/919052310001?text=Hi%2C%20I%27d%20like%20to%20book%20Blissful%20Retreat%21%20%F0%9F%8F%A1%0A%0AHere%20are%20my%20details%3A%0A%0A%F0%9F%93%85%20Date%20of%20Booking%3A%20%0A%F0%9F%91%A5%20Number%20of%20Guests%3A%20%0A%F0%9F%8E%89%20Purpose%20of%20Visit%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you%21" target="_blank" rel="noopener" aria-label="WhatsApp Booking">
+  <div class="wa-pulse"></div>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.943l6.284-1.649A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-4.988-1.362l-.357-.213-3.732.98.998-3.641-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+</a>
+
+<!-- MOBILE PANEL -->
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#experiences">Experiences</a>
+  <a href="#reviews">Client Stories</a>
+  <a href="#availability">Availability</a>
+  <a href="https://maps.app.goo.gl/yMPQjEHRnrGRMuJ2A?g_st=ac" target="_blank" rel="noopener">Location</a>
+  <a href="#booking">Book Now</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <div class="brand"><div class="brand-mark"></div>Blissful <span class="gold">&nbsp;|&nbsp;</span> Retreat</div>
+    <div class="nav-links">
+      <a href="#experiences">Experiences</a>
+      <a href="#reviews">Client Stories</a>
+      <a href="#availability">Availability</a>
+      <a href="https://maps.app.goo.gl/yMPQjEHRnrGRMuJ2A?g_st=ac" target="_blank" rel="noopener">Location</a>
+      <a href="#booking" class="nav-cta">Book Now</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<!-- WEEKEND STATUS BANNER -->
+<div id="weekend-banner" style="display:none;text-align:center;padding:14px 20px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.07);font-size:.9rem;color:rgba(245,240,232,.75);letter-spacing:.04em;position:relative;z-index:2"></div>
+
+<section class="hero">
+  <div class="hero-video-wrap">
+    <img class="hero-video" src="night_view.jpeg" alt="Blissful Retreat aerial night view"/>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-kicker hero-fade">Moinabad, Hyderabad &nbsp;·&nbsp; Private Farm Stay</div>
+    <h1 class="hero-fade d1">Escape the Chaos.<br/>Experience <span class="gold">Luxury</span><br/>in Nature.</h1>
+    <p class="hero-sub hero-fade d2">Blissful Retreat — Moinabad Farm Stay<br/>Where every moment becomes a cherished memory.</p>
+  </div>
+  <div class="hero-scroll-wrap">
+    <div class="hero-scroll"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="glass-panel intro-copy reveal">
+        <div class="eyebrow">About the Retreat</div>
+        <h2 class="section-title">A Private Estate<br/>Born for <span class="gold">Celebration</span></h2>
+        <p>Nestled in the serene outskirts of Moinabad, Hyderabad, Blissful Retreat is a curated luxury farmhouse crafted for those who seek more than just a getaway. Surrounded by open skies, lush lawns, and the soft rustle of nature, this private estate is your canvas for unforgettable group experiences.</p>
+        <p>Whether it is a family reunion, a corporate escape, a birthday celebration, or a weekend with loved ones — every corner of Blissful Retreat is designed to make you feel at home in the most luxurious way possible. Premium amenities, thoughtful design, and heartfelt hospitality await you.</p>
+      </div>
+      <div class="glass-panel intro-side reveal">
+        <div class="feature-tile">
+          <div class="feature-line"></div>
+          <div class="feature-headline">Dual Pool Experience</div>
+          <div class="feature-sub">Children's pool &amp; adult pool with premium ambient evening lighting</div>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-line"></div>
+          <div class="feature-headline">5 Premium Bedrooms</div>
+          <div class="feature-sub">Fully air-conditioned with luxury interiors &amp; 6 en-suite bathrooms</div>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-line"></div>
+          <div class="feature-headline">20+ Guest Capacity</div>
+          <div class="feature-sub">Perfect for families, group trips &amp; corporate retreats</div>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-line"></div>
+          <div class="feature-headline">Moinabad, Hyderabad</div>
+          <div class="feature-sub">45 mins from the city — private, peaceful, and completely yours</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES SECTION -->
+<section class="section" id="experiences">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">What Awaits You</div>
+      <h2 class="section-title">Curated <span class="gold">Experiences</span></h2>
+      <p class="section-desc" style="margin-bottom:48px">Each experience at Blissful Retreat is designed to create moments that linger long after you leave.</p>
+    </div>
+    <div class="experiences-grid">
+      <div class="experience-card reveal" data-exp="pool">
+<video class="card-bg" autoplay muted loop playsinline preload="none" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0"><source src="main pool video.mp4" type="video/mp4"><img src="lawn.jpeg" alt="Pool &amp; Lighting" style="width:100%;height:100%;object-fit:cover"/></video>
+        <div class="experience-card-content">
+          <span class="experience-tag">Leisure</span>
+          <h3>Pool &amp; Lighting</h3>
+          <p>Two pools, ambient lighting, and endless summer vibes.</p>
+          <div class="card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+      <div class="experience-card reveal" data-exp="bedrooms">
+<video class="card-bg" autoplay muted loop playsinline preload="none" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0"><source src="bedroom video.mp4" type="video/mp4"><img src="bedroom.jpeg" alt="Bedrooms &amp; Bathrooms" style="width:100%;height:100%;object-fit:cover"/></video>
+        <div class="experience-card-content">
+          <span class="experience-tag">Stay</span>
+          <h3>Bedrooms &amp; Bathrooms</h3>
+          <p>5 air-conditioned bedrooms with premium interiors.</p>
+          <div class="card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+      <div class="experience-card reveal" data-exp="games">
+<div class="card-bg" style="background-image:url('foose_ball_main.jpeg')"></div>
+        <div class="experience-card-content">
+          <span class="experience-tag">Fun</span>
+          <h3>Games &amp; More</h3>
+          <p>Foosball, indoor games, and non-stop group entertainment.</p>
+          <div class="card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+      <div class="experience-card reveal" data-exp="lawn">
+<video class="card-bg" autoplay muted loop playsinline preload="none" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0"><source src="staris video.mp4" type="video/mp4"><img src="lawn.jpeg" alt="Party Lawn" style="width:100%;height:100%;object-fit:cover"/></video>
+        <div class="experience-card-content">
+          <span class="experience-tag">Celebrate</span>
+          <h3>Party Lawn</h3>
+          <p>Vast landscaped lawn for events, setups &amp; celebrations.</p>
+          <div class="card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+      <div class="experience-card reveal" data-exp="sitout">
+<video class="card-bg" autoplay muted loop playsinline preload="none" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0"><source src="open kitchen video .mp4" type="video/mp4"><img src="upper_balcony.jpeg" alt="Sit Out Areas" style="width:100%;height:100%;object-fit:cover"/></video>
+        <div class="experience-card-content">
+          <span class="experience-tag">Relax</span>
+          <h3>Sit Out Areas</h3>
+          <p>Multiple sit-out spots with stunning views and serene vibes.</p>
+          <div class="card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+      <div class="experience-card reveal" data-exp="campfire">
+<div class="card-bg" style="background-image:url('night.jpeg')"></div>
+        <div class="experience-card-content">
+          <span class="experience-tag">Dining</span>
+          <h3>Campfire &amp; BBQ</h3>
+          <p>Smoky grills, open fires, and dining under a canopy of stars.</p>
+          <div class="card-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CINEMATIC SECTION -->
+<section class="cinematic">
+  <div class="cinematic-bg" style="background-image:url('upper_balcony.jpeg')"></div>
+  <div class="cinematic-overlay"></div>
+  <div class="container">
+    <div class="cinematic-content reveal">
+      <div class="eyebrow" style="justify-content:center">The Blissful Experience</div>
+      <h2>Where Nights Turn<br/>Into <span class="gold">Memories</span></h2>
+      <p>Step away from the noise of the city. At Blissful Retreat, time slows, connections deepen, and every evening becomes a story worth telling for years to come.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS SECTION (UNIFIED) -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Hear From Our Guests</div>
+      <h2 class="section-title">What Our <span class="gold">Guests Say</span></h2>
+      <p class="section-desc" style="margin-bottom:48px">Real stays, real stories — from families, friends, and teams who made Blissful Retreat their own.</p>
+    </div>
+    <div class="reviews-grid">
+      <!-- CARD 1: YouTube Featured Card (Full Width) -->
+      <div class="review-card reveal" style="grid-column:1 / -1;display:flex;flex-direction:row;height:280px" id="ytFeaturedCard">
+        <div style="width:50%;position:relative;overflow:hidden;cursor:pointer" onclick="openVideoLightbox('TxU7uElIDz4')">
+          <img src="promotion.png" alt="Blissful Retreat Promo" style="width:100%;height:100%;object-fit:cover" loading="lazy"/>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,168,76,0.9);display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(201,168,76,0.4)">
+              <svg viewBox="0 0 24 24" style="width:26px;height:26px;fill:#fff;margin-left:4px"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div style="width:50%;padding:32px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.03))">
+          <span style="color:var(--gold);font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:600;margin-bottom:8px">FEATURED VIDEO</span>
+          <h4 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:8px;line-height:1.2">A Retreat Worth Remembering</h4>
+          <p style="color:rgba(245,240,232,0.65);font-size:0.9rem;margin-bottom:20px;line-height:1.5">See why guests keep coming back to Blissful Retreat — a full walkthrough of the farmhouse experience.</p>
+          <a href="https://youtu.be/TxU7uElIDz4" target="_blank" rel="noopener" class="btn btn-secondary" style="align-self:flex-start;min-height:44px;padding:0 20px;font-size:0.88rem;border-color:rgba(201,168,76,0.4);color:var(--gold);gap:6px;background:transparent">
+            ▶ Watch on YouTube
+          </a>
+        </div>
+      </div>
+
+      <!-- CARD 2: Sandeep G -->
+      <div class="review-card reveal" style="display:flex;flex-direction:row;height:200px">
+        <div style="width:40%;overflow:hidden">
+          <img src="review 1.jpeg" alt="Sandeep G" style="width:100%;height:100%;object-fit:cover" loading="lazy"/>
+        </div>
+        <div style="width:60%;padding:24px;display:flex;flex-direction:column;justify-content:space-between;position:relative">
+          <div>
+            <div class="g-stars">★★★★★</div>
+            <p style="color:rgba(245,240,232,0.78);font-size:0.8rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden">"We organized our office party at Blissful Retreat Farmstay, and it turned out to be a perfect choice. All our office colleagues enjoyed thoroughly — the environment, pool, and arrangements were top-notch."</p>
+          </div>
+          <div>
+            <strong style="display:block;font-size:0.88rem;color:var(--beige)">Sandeep G</strong>
+            <span style="color:rgba(245,240,232,0.48);font-size:0.74rem">Business &amp; Friends · Google Review</span>
+          </div>
+          <div style="position:absolute;bottom:20px;right:20px">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: JayaSri Raparthi -->
+      <div class="review-card reveal" style="display:flex;flex-direction:row;height:200px">
+        <div style="width:40%;overflow:hidden">
+          <img src="review 6.jpeg" alt="JayaSri Raparthi" style="width:100%;height:100%;object-fit:cover" loading="lazy"/>
+        </div>
+        <div style="width:60%;padding:24px;display:flex;flex-direction:column;justify-content:space-between;position:relative">
+          <div>
+            <div class="g-stars">★★★★★</div>
+            <p style="color:rgba(245,240,232,0.78);font-size:0.8rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden">"We recently stayed at Blissful Retreat Farmhouse for a night and absolutely loved the experience. The place is beautifully maintained, peaceful, and perfect for a relaxing getaway away from the city rush."</p>
+          </div>
+          <div>
+            <strong style="display:block;font-size:0.88rem;color:var(--beige)">JayaSri Raparthi</strong>
+            <span style="color:rgba(245,240,232,0.48);font-size:0.74rem">Family Stay · Google Review</span>
+          </div>
+          <div style="position:absolute;bottom:20px;right:20px">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: Sunkara Sireesha (Text Only) -->
+      <div class="review-card reveal" style="padding:28px;display:flex;flex-direction:column;justify-content:space-between;height:200px;position:relative">
+        <span style="position:absolute;top:12px;left:16px;font-size:4rem;color:rgba(201,168,76,0.3);font-family:serif;line-height:1">"</span>
+        <div style="z-index:1">
+          <div class="g-stars" style="margin-left:20px">★★★★★</div>
+          <p style="color:rgba(245,240,232,0.78);font-size:0.8rem;line-height:1.4;margin-left:20px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden">"We had an amazing stay at Blissful Retreat! The farmhouse is peaceful and surrounded by nature. The swimming pool was very clean and fun for both adults and kids, and the terrace in the evening had a lovely, calm vibe."</p>
+        </div>
+        <div style="margin-left:20px">
+          <strong style="display:block;font-size:0.88rem;color:var(--beige)">Sunkara Sireesha</strong>
+          <span style="color:rgba(245,240,232,0.48);font-size:0.74rem">Group Stay · Google Review</span>
+        </div>
+        <div style="position:absolute;bottom:20px;right:20px">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+          </svg>
+        </div>
+      </div>
+    </div><!-- /reviews-grid -->
+
+    <!-- "View on Google" link -->
+    <div style="text-align:center;margin-top:36px" class="reveal">
+      <a href="https://maps.app.goo.gl/yMPQjEHRnrGRMuJ2A?g_st=ac" target="_blank" rel="noopener" class="btn btn-secondary" style="display:inline-flex;min-height:48px;font-size:.9rem;gap:8px">
+        <svg width="16" height="16" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        See All Reviews on Google · 4.1 ★ (54 reviews)
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- AVAILABILITY SECTION -->
+<section class="section" id="availability" style="padding-bottom:80px">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <div class="eyebrow" style="justify-content:center">Plan Your Visit</div>
+      <h2 class="section-title">Check <span class="gold">Availability</span></h2>
+      <p class="section-desc" style="margin:0 auto">Scroll through the calendar to check availability. Red dates are already booked — pick any available date and reach out to us on WhatsApp.</p>
+    </div>
+    
+    <div class="cal-panel reveal" style="max-width:680px;margin:0 auto">
+      <div id="avail-calendar">
+        <div class="cal-loading">Loading calendar...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- BOOKING SECTION -->
+<section class="section" id="booking" style="padding-bottom:80px">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Start Your Escape</div>
+      <h2 class="section-title" style="margin-bottom:48px">Plan Your <span class="gold">Escape</span></h2>
+    </div>
+    <div class="booking-wrap">
+      <div class="booking-card glass-panel reveal">
+        <h3>Ready to Make It Yours?</h3>
+        <p>Reach out and we'll plan the perfect stay for your group.</p>
+        <div class="booking-actions">
+          <a href="https://wa.me/919052310001?text=Hi%2C%20I%27d%20like%20to%20book%20Blissful%20Retreat%21%20%F0%9F%8F%A1%0A%0AHere%20are%20my%20details%3A%0A%0A%F0%9F%93%85%20Date%20of%20Booking%3A%20%0A%F0%9F%91%A5%20Number%20of%20Guests%3A%20%0A%F0%9F%8E%89%20Purpose%20of%20Visit%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you%21" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.943l6.284-1.649A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-4.988-1.362l-.357-.213-3.732.98.998-3.641-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+            WhatsApp Us
+          </a>
+          <a href="tel:+919052310001" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            📞 Call Now
+          </a>
+          </a>
+        </div>
+      </div>
+      <div class="booking-info glass-panel reveal">
+        <h3>Get in Touch</h3>
+        <ul class="contact-list">
+          <li>
+            <small>Phone &amp; WhatsApp</small>
+            <a href="tel:+919052310001">+91 78931 01005</a>
+          </li>
+          <li>
+            <small>Email</small>
+            <a href="mailto:blissfulretreat.hyd@gmail.com">blissfulretreat.hyd@gmail.com</a>
+          </li>
+          <li>
+            <small>Location</small>
+            <a href="https://maps.app.goo.gl/yMPQjEHRnrGRMuJ2A?g_st=ac" target="_blank" rel="noopener">Moinabad, Hyderabad, Telangana</a>
+          </li>
+          <li>
+            <small>Instagram</small>
+            <a href="https://instagram.com/blissfulretreat2024" target="_blank" rel="noopener">@blissfulretreat2024</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Blissful <span class="gold">Retreat</span></div>
+        <p class="footer-tagline">Moinabad, Hyderabad · Private Luxury Farm Stay</p>
+        <div class="footer-contact">
+          <p>📞 +91 78931 01005</p>
+          <p>✉️ blissfulretreat.hyd@gmail.com</p>
+          <p>📍 Moinabad, Hyderabad, Telangana</p>
+        </div>
+        <br/>
+        <a href="https://instagram.com/blissfulretreat2024" class="insta-pill" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          @blissfulretreat2024
+        </a>
+      </div>
+      <div class="footer-links-col">
+        <h5>Quick Links</h5>
+        <a href="#about">About</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#reviews">Client Stories</a>
+        <a href="https://maps.app.goo.gl/yMPQjEHRnrGRMuJ2A?g_st=ac" target="_blank" rel="noopener">Location</a>
+        <a href="#booking">Book Now</a>
+      </div>
+      <div class="footer-links-col">
+        <h5>Experiences</h5>
+        <a href="#experiences">Private Pool</a>
+        <a href="#experiences">Bedrooms</a>
+        <a href="#experiences">Games &amp; More</a>
+        <a href="#experiences">Party Lawn</a>
+        <a href="#experiences">Sit Out Areas</a>
+        <a href="#experiences">Campfire &amp; BBQ</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Blissful Retreat, Moinabad, Hyderabad. All rights reserved.</span>
+      <span>Crafted with ♥ for unforgettable escapes</span>
+    </div>
+  </div>
+</footer>
+
+<!-- VIDEO LIGHTBOX -->
+<div class="vid-lightbox" id="vidLightbox">
+  <div class="vid-lightbox-inner">
+    <button class="vid-lightbox-close" id="vidClose" aria-label="Close video">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <iframe id="vidIframe" src="" title="Guest Video" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+  </div>
+</div>
+
+<!-- EXPERIENCE MODALS -->
+
+<!-- Modal: Pool & Lighting -->
+<div class="modal" id="modal-pool">
+  <div class="modal-dialog">
+    <button class="modal-close" data-close><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-body">
+      <div class="modal-gallery">
+        <img src="lawn.jpeg" alt="Pool Area"/>
+        <img src="night.jpeg" alt="Pool Night Lighting"/>
+        <img src="night_view.jpeg" alt="Evening Ambiance"/>
+        <img src="upper_balcony.jpeg" alt="Balcony view"/>
+      </div>
+      <div class="modal-content-grid">
+        <div>
+          <h2 class="modal-title">Pool <span class="gold">&amp; Lighting</span></h2>
+          <p class="highlights-title">Experience Highlights</p>
+          <ul class="highlights">
+            <li>Dedicated children's pool — safe &amp; fun</li>
+            <li>Spacious adult pool with clean filtered water</li>
+            <li>Premium ambient &amp; underwater lighting</li>
+          </ul>
+        </div>
+        <div class="modal-side-card">
+          <h4>Reserve Pool Time</h4>
+          <p>Discuss pool setup, lighting preferences, and special evening arrangements with us.</p>
+          <a href="https://wa.me/919052310001?text=Hi%2C%20I%27d%20like%20to%20book%20Blissful%20Retreat%21%20%F0%9F%8F%A1%0A%0AHere%20are%20my%20details%3A%0A%0A%F0%9F%93%85%20Date%20of%20Booking%3A%20%0A%F0%9F%91%A5%20Number%20of%20Guests%3A%20%0A%F0%9F%8E%89%20Purpose%20of%20Visit%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you%21" class="btn btn-primary" style="width:100%" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Bedrooms & Bathrooms -->
+<div class="modal" id="modal-bedrooms">
+  <div class="modal-dialog">
+    <button class="modal-close" data-close><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-body">
+      <div class="modal-gallery">
+        <img src="bedroom.jpeg" alt="Premium bedroom"/>
+        <img src="washroom.jpeg" alt="Luxury bathroom"/>
+        <img src="design.jpeg" alt="Interior design"/>
+        <img src="living_room.jpeg" alt="Living Area"/>
+      </div>
+      <div class="modal-content-grid">
+        <div>
+          <h2 class="modal-title">Bedrooms <span class="gold">&amp; Bathrooms</span></h2>
+          <p class="highlights-title">Experience Highlights</p>
+          <ul class="highlights">
+            <li>5 fully air-conditioned bedrooms</li>
+            <li>6 premium bathrooms — no waiting</li>
+            <li>Luxury bedding &amp; premium interiors</li>
+          </ul>
+        </div>
+        <div class="modal-side-card">
+          <h4>Check Room Availability</h4>
+          <p>Our rooms are exclusively yours for the entire stay — no shared guests, no strangers.</p>
+          <a href="https://wa.me/919052310001?text=Hi%2C%20I%27d%20like%20to%20book%20Blissful%20Retreat%21%20%F0%9F%8F%A1%0A%0AHere%20are%20my%20details%3A%0A%0A%F0%9F%93%85%20Date%20of%20Booking%3A%20%0A%F0%9F%91%A5%20Number%20of%20Guests%3A%20%0A%F0%9F%8E%89%20Purpose%20of%20Visit%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you%21" class="btn btn-primary" style="width:100%" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Games & More -->
+<div class="modal" id="modal-games">
+  <div class="modal-dialog">
+    <button class="modal-close" data-close><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-body">
+      <div class="modal-gallery">
+        <img src="games.jpeg" alt="Games area"/>
+        <img src="foose_ball_main.jpeg" alt="Foosball table"/>
+        <img src="foose_ball.jpeg" alt="Foosball game"/>
+        <img src="main_hall.jpeg" alt="Main Hall"/>
+      </div>
+      <div class="modal-content-grid">
+        <div>
+          <h2 class="modal-title">Games <span class="gold">&amp; More</span></h2>
+          <p class="highlights-title">Experience Highlights</p>
+          <ul class="highlights">
+            <li>Premium full-size foosball table</li>
+            <li>Indoor games &amp; carrom available</li>
+            <li>Perfect for group tournaments &amp; team bonding</li>
+          </ul>
+        </div>
+        <div class="modal-side-card">
+          <h4>Game On</h4>
+          <p>We can set up tournaments and activities tailored for your group size and preferences.</p>
+          <a href="https://wa.me/919052310001?text=Hi%2C%20I%27d%20like%20to%20book%20Blissful%20Retreat%21%20%F0%9F%8F%A1%0A%0AHere%20are%20my%20details%3A%0A%0A%F0%9F%93%85%20Date%20of%20Booking%3A%20%0A%F0%9F%91%A5%20Number%20of%20Guests%3A%20%0A%F0%9F%8E%89%20Purpose%20of%20Visit%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you%21" class="btn btn-primary" style="width:100%" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Party Lawn -->
+<div class="modal" id="modal-lawn">
+  <div class="modal-dialog">
+    <button class="modal-close" data-close><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-body">
+      <div class="modal-gallery">
+        <img src="lawn.jpeg" alt="Party Lawn"/>
+        <img src="main_hall.jpeg" alt="Main Hall"/>
+        <img src="night.jpeg" alt="Evening Setup"/>
+        <img src="night_view.jpeg" alt="Evening Ambiance"/>
+      </div>
+      <div class="modal-content-grid">
+        <div>
+          <h2 class="modal-title">Party <span class="gold">Lawn</span></h2>
+          <p class="highlights-title">Experience Highlights</p>
+          <ul class="highlights">
+            <li>Sprawling manicured party lawn</li>
+            <li>Ideal for themed event &amp; decoration setups</li>
+            <li>Perfect for group photos &amp; outdoor activities</li>
+          </ul>
+        </div>
+        <div class="modal-side-card">
+          <h4>Plan Your Event</h4>
+          <p>Tell us your vision — we'll help set up the lawn exactly the way you imagine it.</p>
+          <a href="https://wa.me/919052310001?text=Hi%2C%20I%27d%20like%20to%20book%20Blissful%20Retreat%21%20%F0%9F%8F%A1%0A%0AHere%20are%20my%20details%3A%0A%0A%F0%9F%93%85%20Date%20of%20Booking%3A%20%0A%F0%9F%91%A5%20Number%20of%20Guests%3A%20%0A%F0%9F%8E%89%20Purpose%20of%20Visit%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you%21" class="btn btn-primary" style="width:100%" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Sit Out Areas -->
+<div class="modal" id="modal-sitout">
+  <div class="modal-dialog">
+    <button class="modal-close" data-close><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-body">
+      <div class="modal-gallery">
+        <img src="upper_balcony.jpeg" alt="Upper Balcony View"/>
+        <img src="living_room.jpeg" alt="Living Area"/>
+        <img src="kitchen.jpeg" alt="Open Kitchen"/>
+        <img src="design.jpeg" alt="Interior Design"/>
+      </div>
+      <div class="modal-content-grid">
+        <div>
+          <h2 class="modal-title">Sit Out <span class="gold">Areas</span></h2>
+          <p class="highlights-title">Experience Highlights</p>
+          <ul class="highlights">
+            <li>Upper balcony with panoramic views</li>
+            <li>Multiple cozy outdoor seating spots</li>
+            <li>Perfect for morning chai &amp; evening relaxation</li>
+          </ul>
+        </div>
+        <div class="modal-side-card">
+          <h4>Your Favourite Spot Awaits</h4>
+          <p>Each sit-out area has its own character and vibe — discover your favourite during your stay.</p>
+          <a href="https://wa.me/919052310001?text=Hi%2C%20I%27d%20like%20to%20book%20Blissful%20Retreat%21%20%F0%9F%8F%A1%0A%0AHere%20are%20my%20details%3A%0A%0A%F0%9F%93%85%20Date%20of%20Booking%3A%20%0A%F0%9F%91%A5%20Number%20of%20Guests%3A%20%0A%F0%9F%8E%89%20Purpose%20of%20Visit%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you%21" class="btn btn-primary" style="width:100%" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Campfire & BBQ -->
+<div class="modal" id="modal-campfire">
+  <div class="modal-dialog">
+    <button class="modal-close" data-close><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-body">
+      <div class="modal-gallery">
+        <img src="night.jpeg" alt="Campfire night"/>
+        <img src="night_view.jpeg" alt="BBQ evening"/>
+        <img src="lawn.jpeg" alt="Outdoor setup"/>
+        <img src="upper_balcony.jpeg" alt="Open sky view"/>
+      </div>
+      <div class="modal-content-grid">
+        <div>
+          <h2 class="modal-title">Campfire <span class="gold">&amp; BBQ</span></h2>
+          <p class="highlights-title">Experience Highlights</p>
+          <ul class="highlights">
+            <li>Outdoor BBQ grill &amp; cooking setup</li>
+            <li>Campfire &amp; bonfire arrangement</li>
+            <li>Open-air dining under the stars</li>
+          </ul>
+        </div>
+        <div class="modal-side-card">
+          <h4>Plan Your BBQ Night</h4>
+          <p>We'll handle the setup — you just bring the appetite and the good company.</p>
+          <a href="https://wa.me/919052310001?text=Hi%2C%20I%27d%20like%20to%20book%20Blissful%20Retreat%21%20%F0%9F%8F%A1%0A%0AHere%20are%20my%20details%3A%0A%0A%F0%9F%93%85%20Date%20of%20Booking%3A%20%0A%F0%9F%91%A5%20Number%20of%20Guests%3A%20%0A%F0%9F%8E%89%20Purpose%20of%20Visit%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you%21" class="btn btn-primary" style="width:100%" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // NAVBAR
+  const navbar = document.getElementById('navbar');
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    navbar.classList.toggle('scrolled', y > 60);
+    navbar.style.transform = (y > lastY && y > 200) ? 'translateY(-120%)' : '';
+    lastY = y;
+  }, { passive: true });
+
+  // MOBILE MENU
+  const menuToggle = document.getElementById('menuToggle');
+  const mobilePanel = document.getElementById('mobilePanel');
+  menuToggle.addEventListener('click', () => mobilePanel.classList.toggle('open'));
+  mobilePanel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobilePanel.classList.remove('open')));
+
+  // SCROLL REVEAL
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('revealed'), i * 80);
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // EXPERIENCE MODALS
+  const expMap = {
+    pool: 'modal-pool',
+    bedrooms: 'modal-bedrooms',
+    games: 'modal-games',
+    lawn: 'modal-lawn',
+    sitout: 'modal-sitout',
+    campfire: 'modal-campfire'
+  };
+
+  function openModal(id) {
+    const m = document.getElementById(id);
+    if (!m) return;
+    m.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(m) {
+    m.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('[data-exp]').forEach(card => {
+    card.addEventListener('click', () => {
+      const id = expMap[card.dataset.exp];
+      if (id) openModal(id);
+    });
+  });
+  document.querySelectorAll('[data-close]').forEach(btn => {
+    btn.addEventListener('click', () => closeModal(btn.closest('.modal')));
+  });
+  document.querySelectorAll('.modal').forEach(m => {
+    m.addEventListener('click', e => { if (e.target === m) closeModal(m); });
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal.open').forEach(closeModal);
+      closeVideoLightbox();
+    }
+  });
+
+  // VIDEO LIGHTBOX
+  const vidLightbox = document.getElementById('vidLightbox');
+  const vidIframe = document.getElementById('vidIframe');
+  const vidClose = document.getElementById('vidClose');
+
+  function openVideoLightbox(videoId) {
+    vidIframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0&modestbranding=1';
+    vidLightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeVideoLightbox() {
+    vidLightbox.classList.remove('open');
+    vidIframe.src = '';
+    document.body.style.overflow = '';
+  }
+  vidClose.addEventListener('click', closeVideoLightbox);
+  vidLightbox.addEventListener('click', e => { if (e.target === vidLightbox) closeVideoLightbox(); });
+</script>
+
+<script>
+/* ===== AVAILABILITY CALENDAR ===== */
+var calYear = new Date().getFullYear();
+var calMonth = new Date().getMonth();
+
+function renderCalendar(bookedDates) {
+  var container = document.getElementById('avail-calendar');
+  if (!container) return;
+  var today = new Date().toISOString().split('T')[0];
+  var firstDay = new Date(calYear, calMonth, 1);
+  var daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+  var startDay = firstDay.getDay();
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var h = '<div class="cal-header">'
+    + '<button class="cal-nav" onclick="calNav(-1)">&#8249;</button>'
+    + '<span class="cal-month-label">' + months[calMonth] + ' ' + calYear + '</span>'
+    + '<button class="cal-nav" onclick="calNav(1)">&#8250;</button>'
+    + '</div><div class="cal-grid">';
+  ['Su','Mo','Tu','We','Th','Fr','Sa'].forEach(function(d){ h += '<div class="cal-day-name">'+d+'</div>'; });
+  for (var i = 0; i < startDay; i++) h += '<div class="cal-cell empty"></div>';
+  for (var d = 1; d <= daysInMonth; d++) {
+    var mp = String(calMonth+1).padStart(2,'0');
+    var dp = String(d).padStart(2,'0');
+    var ds = calYear + '-' + mp + '-' + dp;
+    var booked = bookedDates.has(ds);
+    var isPast = ds < today;
+    var isToday = ds === today;
+    var cls = 'cal-cell';
+    if (booked) {
+      cls += ' booked';
+      h += '<div class="' + cls + '">'
+        + '<span class="cal-tooltip">🚫 Already Booked<br/><span style="color:rgba(245,240,232,.55);font-size:.72rem">This date is unavailable.</span></span>'
+        + d + '</div>';
+    } else {
+      if (isPast) cls += ' past';
+      else cls += ' available';
+      if (isToday) cls += ' today';
+      h += '<div class="' + cls + '">' + d + '</div>';
+    }
+  }
+  h += '</div><div class="cal-legend">'
+    + '<span>🔴 Booked</span>'
+    + '<span>⚪ Available</span>'
+    + '<span>🟡 Today</span>'
+    + '</div>';
+  container.innerHTML = h;
+}
+
+function calNav(dir) {
+  calMonth += dir;
+  if (calMonth < 0) { calMonth = 11; calYear--; }
+  if (calMonth > 11) { calMonth = 0; calYear++; }
+  renderCalendar(window.bookedDatesSet || new Set());
+}
+
+function initCalendar() {
+  function startListening() {
+    const db = window.__blissfulDB;
+    const mods = window.__firestoreModules;
+    
+    if (!db || !mods) {
+      console.warn('Firebase not ready');
+      renderCalendar(new Set());
+      return;
+    }
+
+    const { collection, onSnapshot } = mods;
+
+    onSnapshot(
+      collection(db, 'bookings'),
+      (snapshot) => {
+        const bookedDates = new Set();
+        snapshot.forEach(doc => {
+          const data = doc.data();
+          
+          // Skip cancelled
+          if (data.status === 'Cancelled') return;
+          
+          // Must have both dates
+          if (!data.checkInDate || !data.checkOutDate) return;
+
+          // Parse YYYY-MM-DD strings
+          const start = new Date(data.checkInDate + 'T00:00:00');
+          const end = new Date(data.checkOutDate + 'T00:00:00');
+          
+          // Mark every day from checkin up to (not including) checkout
+          const current = new Date(start);
+          while (current < end) {
+            bookedDates.add(current.toISOString().split('T')[0]);
+            current.setDate(current.getDate() + 1);
+          }
+        });
+
+        console.log('Booked dates from Firebase:', 
+          Array.from(bookedDates));
+        window.bookedDatesSet = bookedDates;
+        renderCalendar(bookedDates);
+      },
+      (error) => {
+        console.error('Firestore error:', error);
+        renderCalendar(new Set());
+      }
+    );
+  }
+
+  // If Firebase already ready, start immediately
+  // Otherwise wait for firebaseReady event
+  if (window.__blissfulDB && window.__firestoreModules) {
+    startListening();
+  } else {
+    window.addEventListener('firebaseReady', startListening, 
+      { once: true });
+  }
+}
+
+function loadWeekendStatus() {
+  function runBanner() {
+    const db = window.__blissfulDB;
+    const mods = window.__firestoreModules;
+    if (!db || !mods) return;
+
+    const { collection, onSnapshot } = mods;
+
+    onSnapshot(collection(db, 'bookings'), (snapshot) => {
+      const bookings = [];
+      snapshot.forEach(doc => {
+        const d = doc.data();
+        if (d.status !== 'Cancelled' && 
+            d.checkInDate && d.checkOutDate) {
+          bookings.push({ 
+            in: d.checkInDate, 
+            out: d.checkOutDate 
+          });
+        }
+      });
+
+      const now = new Date();
+      const day = now.getDay();
+      const daysToSat = (6 - day + 7) % 7 || 7;
+      const sat = new Date(now);
+      sat.setDate(now.getDate() + daysToSat);
+      const sun = new Date(sat);
+      sun.setDate(sat.getDate() + 1);
+      const mon = new Date(sun);
+      mon.setDate(sun.getDate() + 1);
+
+      const satStr = sat.toISOString().split('T')[0];
+      const monStr = mon.toISOString().split('T')[0];
+
+      const weekendBooked = bookings.some(b =>
+        satStr < b.out && monStr > b.in
+      );
+
+      const banner = document.getElementById('weekend-banner');
+      if (!banner) return;
+      banner.style.display = 'block';
+
+      const satLabel = sat.toLocaleDateString('en-IN',
+        { day: 'numeric', month: 'short' });
+      const sunLabel = sun.toLocaleDateString('en-IN',
+        { day: 'numeric', month: 'short' });
+
+      if (weekendBooked) {
+        banner.innerHTML = 
+          `🔴 &nbsp;Fully booked this weekend 
+          (${satLabel}–${sunLabel}) &nbsp;·&nbsp; 
+          <a href="#availability" 
+            style="color:var(--gold);text-decoration:none">
+            Check other dates →
+          </a>`;
+      } else {
+        banner.innerHTML = 
+          `🟢 &nbsp;Available this weekend 
+          (${satLabel}–${sunLabel}) &nbsp;·&nbsp; 
+          <a href="#availability"
+            style="color:var(--gold);text-decoration:none;
+            cursor:pointer">
+            Book now →
+          </a>`;
+      }
+    });
+  }
+
+  if (window.__blissfulDB && window.__firestoreModules) {
+    runBanner();
+  } else {
+    window.addEventListener('firebaseReady', runBanner, 
+      { once: true });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  initCalendar();
+  loadWeekendStatus();
+});
+</script>
+<script>
+// Video Intersection Observer — play only when visible, pause when off-screen
+(function() {
+  var cardVideos = document.querySelectorAll('.experience-card video');
+  if (!cardVideos.length) return;
+  var videoObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      var v = entry.target;
+      if (entry.isIntersecting) { v.play().catch(function(){}); }
+      else { v.pause(); }
+    });
+  }, { threshold: 0.25 });
+  cardVideos.forEach(function(v) { videoObserver.observe(v); });
+})();
+</script>
+</body>
+</html>

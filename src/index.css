@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #0a2015;
+    --bg-surface: #0f2c1e;
+    --bg-soft: #153b28;
+    --bg-card: rgba(18, 48, 33, 0.75);
+    --forest-deep: #0a2015;
+    --forest-moss: #1b452f;
+    --sage: #52b788;
+    --sage-light: #74c69d;
+    --sage-glow: rgba(82, 183, 136, 0.28);
+    --amber: #dda15e;
+    --amber-warm: #bc6c25;
+    --amber-soft: rgba(221, 161, 94, 0.2);
+    --terracotta: #e07a5f;
+    --cream: #f7f5ee;
+    --cream-muted: #d8d3c5;
+    --w08: rgba(255, 255, 255, 0.08);
+    --shadow-forest: 0 24px 70px rgba(3, 16, 9, 0.55);
+    --rx: 26px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: radial-gradient(circle at 15% 15%, rgba(82, 183, 136, 0.16), transparent 45%),
+                radial-gradient(circle at 85% 25%, rgba(221, 161, 94, 0.12), transparent 40%),
+                radial-gradient(circle at 50% 80%, rgba(45, 106, 79, 0.32), transparent 55%),
+                linear-gradient(180deg, #091f14 0%, #0d281a 35%, #103221 70%, #091f14 100%);
+    color: var(--cream);
+    overflow-x: hidden;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Subtle Organic Linen / Forest Mist Texture */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(rgba(82, 183, 136, 0.03) 1px, transparent 1px),
+    radial-gradient(rgba(221, 161, 94, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  opacity: 0.75;
+  z-index: 1;
+}
+
+/* Remove scroll bar at right side across all browsers while retaining smooth scroll */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+/* Animations */
+@keyframes scrollDot {
+  0% { transform: translate(-50%, 0); opacity: 0; }
+  20% { opacity: 1; }
+  60% { transform: translate(-50%, 18px); opacity: 1; }
+  100% { transform: translate(-50%, 24px); opacity: 0; }
+}
+
+@keyframes waPulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+@keyframes leafSway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(6deg); }
+}
+
+.animate-scroll-dot {
+  animation: scrollDot 2s ease-in-out infinite;
+}
+
+.animate-wa-pulse {
+  animation: waPulse 2.2s ease-out infinite;
+}
+
+.animate-leaf-sway {
+  animation: leafSway 4s ease-in-out infinite;
+}
+
+/* Nature Botanical Components */
+.glass-panel {
+  background: linear-gradient(165deg, rgba(20, 52, 36, 0.72) 0%, rgba(12, 36, 25, 0.88) 100%);
+  border: 1px solid rgba(82, 183, 136, 0.24);
+  border-radius: var(--rx);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 50px rgba(3, 16, 9, 0.45);
+}
+
+.glass-panel-warm {
+  background: linear-gradient(165deg, rgba(38, 30, 20, 0.55) 0%, rgba(18, 22, 17, 0.8) 100%);
+  border: 1px solid rgba(221, 161, 94, 0.2);
+  border-radius: var(--rx);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 50px rgba(3, 10, 6, 0.45);
+}
+
+.btn-primary {
+  color: #07150e;
+  background: linear-gradient(135deg, #74c69d 0%, #52b788 50%, #2d6a4f 100%);
+  box-shadow: 0 16px 36px rgba(82, 183, 136, 0.28);
+  font-weight: 600;
+}
+.btn-primary:hover {
+  box-shadow: 0 22px 46px rgba(82, 183, 136, 0.42);
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #95d5b2 0%, #52b788 50%, #40916c 100%);
+}
+
+.btn-warm {
+  color: #1a0f05;
+  background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+  box-shadow: 0 16px 36px rgba(231, 111, 81, 0.28);
+  font-weight: 600;
+}
+.btn-warm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 46px rgba(231, 111, 81, 0.4);
+}
+
+.btn-secondary {
+  color: var(--cream);
+  border: 1px solid rgba(82, 183, 136, 0.25);
+  background: rgba(18, 38, 28, 0.55);
+  backdrop-filter: blur(14px);
+}
+.btn-secondary:hover {
+  border-color: rgba(82, 183, 136, 0.55);
+  background: rgba(28, 56, 42, 0.7);
+  box-shadow: 0 0 20px rgba(82, 183, 136, 0.2);
+  transform: translateY(-2px);
+}
+
+/* WebGL canvas container */
+.webgl-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+
